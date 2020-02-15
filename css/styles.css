@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Sriracha&display=swap");
 * {
   box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.main-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; }
 
 li {
   list-style: none; }
@@ -41,7 +52,8 @@ img {
     width: 90%;
     margin: -103px auto 0 auto; }
     #main-header .main-header-text h1 {
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      font-family: 'Open Sans', sans-serif; }
     #main-header .main-header-text span {
       color: yellow; }
     #main-header .main-header-text p {
@@ -137,7 +149,8 @@ img {
   text-align: center;
   padding: 20px; }
   #services h1 {
-    padding: 1rem 0; }
+    padding: 1rem 0;
+    font-family: 'Sriracha', cursive; }
   #services p {
     font-size: 1.3rem; }
   #services .svg-icon {
@@ -160,7 +173,8 @@ img {
   padding: 20px;
   text-align: left; }
   .about-text h1 {
-    text-align: center; }
+    text-align: center;
+    font-family: 'Sriracha', cursive; }
 
 .about-pic-wrapper {
   display: none; }
@@ -169,7 +183,8 @@ img {
   text-align: center;
   padding: 20px 0; }
   #testimonials h1 {
-    margin: 20px 0; }
+    margin: 20px 0;
+    font-family: 'Sriracha', cursive; }
   #testimonials .testimonials-container {
     width: 300px;
     height: 300px;
@@ -211,7 +226,10 @@ footer {
   margin: 0;
   color: #fff;
   text-align: left;
-  padding: 20px 20px 0 20px; }
+  padding-top: 20px; }
+
+.footer-column {
+  padding: 0 20px; }
 
 footer a {
   color: #fff; }
@@ -231,8 +249,19 @@ footer h5 {
   color: yellow; }
 
 @media (min-width: 560px) {
+  #main-header .main-header-text h1 {
+    font-size: 3rem; }
+  #main-header .main-header-text p {
+    font-size: 1.5rem; }
+  #main-header .main-header-text a.main-header-button {
+    padding: 10px 50px;
+    font-size: 1.2rem; }
+
   .navbar-nav {
-    display: flex; }
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    transition: all 6s ease-in; }
 
   #about {
     overflow: hidden; }
@@ -242,7 +271,8 @@ footer h5 {
     flex-wrap: wrap; }
     .about-container .about-text {
       width: 60%;
-      margin: auto; }
+      margin: auto;
+      padding: 100px 0; }
     .about-container .progress-bars {
       height: 70vh;
       width: 50%; }
@@ -252,12 +282,17 @@ footer h5 {
       height: 70vh;
       display: block;
       width: 50%; }
+    .about-container .about-pic-wrapper img {
+      height: 100%;
+      object-fit: cover;
+      object-position: 5% 10%; }
 
   #projects .projects-wrapper {
     display: flex;
     flex-wrap: wrap; }
   #projects h1 {
-    text-align: center; }
+    text-align: center;
+    font-family: 'Sriracha', cursive; }
   #projects .projects-container {
     width: 50%; }
 
@@ -267,8 +302,7 @@ footer h5 {
     display: flex;
     margin: auto; }
     #services .services-container .services-content {
-      padding: 20px;
-      text-align: center;
+      text-align: left;
       margin: 30px; }
     #services .services-container .services-content h2 {
       padding: 20px 0; }
@@ -297,13 +331,38 @@ footer h5 {
     footer .footer-column ul {
       margin: 0 100px; } }
 @media (min-width: 800px) {
+  #main-header .main-header-text h1 {
+    font-size: 4rem; }
+  #main-header .main-header-text p {
+    font-size: 2rem; }
+
+  .about-text {
+    padding: 100px; }
+    .about-text h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px; }
+
+  #projects h1 {
+    padding-top: 100px;
+    font-size: 3.5rem; }
   #projects .projects-wrapper {
     flex-wrap: nowrap; }
   #projects .projects-container {
     width: 25%; }
 
-  .services-container {
-    width: 70%; } }
+  #services h1 {
+    padding-top: 100px;
+    font-size: 3.5rem; }
+  #services .services-container {
+    width: 90%; }
+
+  #testimonials {
+    padding: 100px; }
+    #testimonials h1 {
+      font-size: 3.5rem; }
+
+  footer .footer-column {
+    padding: 50px 0; } }
 @media (max-width: 760px) {
   .navbar-nav {
     background: rgba(0, 0, 0, 0.8);
