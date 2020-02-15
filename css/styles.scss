@@ -1,0 +1,425 @@
+@import "config";
+
+#main-header {
+  min-height: 100vh;
+  overflow: hidden;
+  background: url("https:source.unsplash.com/G1N9kDHqBrQ") center center/cover no-repeat;
+
+  .navbar {
+    background-color: transparent !important;
+    z-index: 3;
+  }
+  a.nav-link {
+    color: #fff;
+  }
+
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+  }
+
+  .main-header-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+    width: 90%;
+    margin: -103px auto 0 auto;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    span {
+      color: yellow;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    .title-1 {
+      margin: 10px 0;
+    }
+
+    a.main-header-button {
+      display: inline-block;
+      border: 2px solid yellow;
+      color: #fff;
+      padding: 10px;
+      margin-top: 50px;
+
+      &:hover {
+        text-decoration: none;
+        background: #fff;
+        color: #333;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.logo {
+  width: 6rem;
+}
+
+.progress-bars {
+  background: black;
+  padding: 20px;
+  h1 {
+    color: #fff;
+  }
+  .bar {
+      margin-bottom: 70px;
+      width: 100%;
+      height: 8px;
+      position: relative;
+      background: #fff;
+      border-radius: 10px;
+
+      span {
+        display: block;
+        background: #de5693;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        border-radius: 10px;
+      }
+
+      p {
+        background: #2e789c;
+        display: inline-block;
+        padding: 5px;
+        margin-top: 15px;
+        border-radius: 5px;
+        color: #fff;
+      }
+
+      .html {
+        width: 100%;
+      }
+
+      .css {
+        width: 90%;
+      }
+
+      .javascript {
+        width: 70%;
+      }
+
+      .react {
+        width: 50%;
+      }
+  }
+}
+
+#projects h1 {
+  padding: 20px;
+  text-align: center;
+}
+
+.projects-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+
+  .project-pictures {
+    position: absolute;
+    transition: transform .4s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-text {
+    background: black;
+    position: absolute;
+    transition: all .4s ease-in-out;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    background: rgba(0,0,0,0.8);
+  }
+
+  .text-overlay {
+    position: absolute;
+    font-size: 4rem;
+    color: #fff;
+  }
+
+  &:hover .project-pictures {
+    transform: scale(1.3);
+  }
+
+  &:hover .project-text {
+    transform: translateX(0);
+  }
+
+
+
+}
+
+#services {
+  text-align: center;
+  padding: 20px;
+  h1 {
+    padding: 1rem 0;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .svg-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+
+  .services-content {
+    text-align: left;
+    margin-bottom: 2rem;
+
+    i {
+      font-size: 2rem;
+    }
+  }
+
+  .web-design-column i,
+  .web-design-column h2 {
+      color: #ff4726;
+  }
+
+  .web-development-column i,
+  .web-development-column h2 {
+    color: #b4b400;
+  }
+}
+
+.about-text {
+  padding: 20px;
+  text-align: left;
+
+  h1 {
+    text-align: center;
+  }
+
+}
+
+  .about-pic-wrapper {
+    display: none;
+  }
+
+#testimonials {
+  text-align: center;
+  padding: 20px 0;
+
+  h1 {
+    margin: 20px 0;
+  }
+
+  .testimonials-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: red;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+
+
+    .testimonials-one {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url("https://source.unsplash.com/TSZo17r3m0s") center no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .testimonials-two {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+      url("https://source.unsplash.com/EZkvESKjbok") center no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .testimonials-three {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+      url("https://source.unsplash.com/9UVmlIb0wJU") center no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .testimonials-text {
+      position: absolute;
+      top: 50%;
+      width: 90%;
+      left: 50%;
+      margin-left: -135px;
+      margin-top: -101px;
+      z-index: 1;
+      color: #fff;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+footer {
+  background: #333;
+  margin: 0;
+  color: #fff;
+  text-align: left;
+  padding: 20px 20px 0 20px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  color: #fff;
+  background: #000;
+}
+
+footer ul {
+  margin: 0;
+  padding: 10px;
+}
+
+footer h5 {
+  color: yellow;
+}
+
+@media (min-width: 560px) {
+
+
+  #about {
+    overflow: hidden;
+  }
+
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .about-text {
+      width: 60%;
+      margin: auto;
+    }
+
+    .progress-bars {
+      height: 70vh;
+      width: 50%;
+    }
+
+    .progress-bars h1 {
+      font-size: 3rem;
+    }
+
+    .about-pic-wrapper {
+      height: 70vh;
+      display: block;
+      width: 50%;
+    }
+  }
+
+  #projects {
+
+    .projects-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .projects-container {
+      width: 50%;
+    }
+  }
+
+  #services {
+
+    .svg-icon {
+      justify-content: center;
+    }
+
+    .services-container {
+      display: flex;
+      margin: auto;
+
+      .services-content {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .services-content h2 {
+        padding: 20px 0;
+      }
+
+    }
+
+  }
+}
+
+@media (min-width: 800px) {
+  #projects {
+    .projects-wrapper {
+      flex-wrap: nowrap;
+    }
+    .projects-container {
+      width: 25%;
+    }
+  }
+
+  .services-container {
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 760px) {
+
+  .navbar-nav {
+    background: rgba(0,0,0,0.8);
+    color: #333;
+    margin: 0;
+
+    .nav-item {
+      border-bottom: 1px #333 solid;
+
+      a.nav-link {
+        color: #000;
+      }
+      a.nav-link:hover {
+        background: #507a90;
+      }
+    }
+  }
+
+}
+
